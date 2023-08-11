@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>vicharaka_sim</name>
+  <name>vicharaka_rover</name>
   <version>0.0.1</version>
-  <description>The vicharaka_sim package. To Simulate the Vicharaka Rover for IISc URC Team.</description>
+  <description>The vicharaka_rover package. To Simulate and Implement the Vicharaka Rover for IISc URC Team.</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
