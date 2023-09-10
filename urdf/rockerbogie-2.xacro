@@ -1,0 +1,470 @@
+<?xml version="1.0" ?>
+<robot name="rockerbogie-2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find rockerbogie-2_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find rockerbogie-2_description)/urdf/rockerbogie-2.trans" />
+<xacro:include filename="$(find rockerbogie-2_description)/urdf/rockerbogie-2.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.3000000000000002 0.25000000000000017 0.37283900000000003" rpy="0 0 0"/>
+    <mass value="1.5105170177541427"/>
+    <inertia ixx="0.005151" iyy="0.000231" izz="0.005151" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component3_1">
+  <inertial>
+    <origin xyz="-0.10755773674105329 -0.0509431809363807 -0.05038364965803355" rpy="0 0 0"/>
+    <mass value="6.761143810780945"/>
+    <inertia ixx="0.039352" iyy="0.245479" izz="0.207884" ixy="0.000261" iyz="-0.00115" ixz="-0.038842"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.3 -0.15 -0.372839" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.3 -0.15 -0.372839" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component5_1">
+  <inertial>
+    <origin xyz="-0.10755774564451281 0.050943180848837144 -0.05038365391213556" rpy="0 0 0"/>
+    <mass value="6.761143255231735"/>
+    <inertia ixx="0.039352" iyy="0.245479" izz="0.207884" ixy="-0.000261" iyz="0.00115" ixz="-0.038842"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.3 -0.35 -0.372839" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.3 -0.35 -0.372839" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2_1">
+  <inertial>
+    <origin xyz="-8.481482183242406e-11 -0.060961453703470975 -0.0462653790905416" rpy="0 0 0"/>
+    <mass value="5.234312053227132"/>
+    <inertia ixx="0.018132" iyy="0.096288" izz="0.079777" ixy="-0.0" iyz="-0.001042" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.15 -0.06025 -0.279939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/Component2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.15 -0.06025 -0.279939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/Component2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component4_1">
+  <inertial>
+    <origin xyz="0.0 0.06096145409995524 -0.046265384296076656" rpy="0 0 0"/>
+    <mass value="5.23431144760391"/>
+    <inertia ixx="0.018132" iyy="0.096288" izz="0.079777" ixy="0.0" iyz="0.001042" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.15 -0.43975 -0.279939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.15 -0.43975 -0.279939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_initial_v1[1]_v2_1">
+  <inertial>
+    <origin xyz="2.965594800130589e-07 -0.043613044761228646 1.2825461553900297e-07" rpy="0 0 0"/>
+    <mass value="3.397639562370722"/>
+    <inertia ixx="0.013323" iyy="0.025608" izz="0.013323" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.054 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/wheel_initial_v1[1]_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.054 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/wheel_initial_v1[1]_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_holder2_v3[1]_v1_1">
+  <inertial>
+    <origin xyz="-1.4029074352933307e-15 -0.01805748319655863 0.0" rpy="0 0 0"/>
+    <mass value="0.1300765489676125"/>
+    <inertia ixx="3.4e-05" iyy="4.7e-05" izz="3.4e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.025 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/motor_holder2_v3[1]_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.025 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/motor_holder2_v3[1]_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_holder2_v3[1]_v1_3">
+  <inertial>
+    <origin xyz="-1.8318679906315083e-15 -0.018057483196557512 -2.7755575615628914e-17" rpy="0 0 0"/>
+    <mass value="0.1300765489676125"/>
+    <inertia ixx="3.4e-05" iyy="4.7e-05" izz="3.4e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.3 0.025 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/motor_holder2_v3[1]_v1_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.3 0.025 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/motor_holder2_v3[1]_v1_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_holder2_v3[1]_v1_4">
+  <inertial>
+    <origin xyz="1.7165016580788909e-15 0.018057483196558866 0.0" rpy="0 0 0"/>
+    <mass value="0.1300765489676125"/>
+    <inertia ixx="3.4e-05" iyy="4.7e-05" izz="3.4e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.525 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/motor_holder2_v3[1]_v1_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.525 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/motor_holder2_v3[1]_v1_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_holder2_v3[1]_v1_5">
+  <inertial>
+    <origin xyz="9.43689570931383e-16 0.01805748319656575 0.0" rpy="0 0 0"/>
+    <mass value="0.1300765489676125"/>
+    <inertia ixx="3.4e-05" iyy="4.7e-05" izz="3.4e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.3 -0.525 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/motor_holder2_v3[1]_v1_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.3 -0.525 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/motor_holder2_v3[1]_v1_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_holder2_v3[1]_v1_6">
+  <inertial>
+    <origin xyz="-1.5543122344752192e-15 -0.018057483196556187 -8.326672684688674e-17" rpy="0 0 0"/>
+    <mass value="0.1300765489676125"/>
+    <inertia ixx="3.4e-05" iyy="4.7e-05" izz="3.4e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.6 -0.075 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/motor_holder2_v3[1]_v1_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.6 -0.075 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/motor_holder2_v3[1]_v1_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_holder2_v3[1]_v1_8">
+  <inertial>
+    <origin xyz="3.219646771412954e-15 0.018057483196558755 0.0" rpy="0 0 0"/>
+    <mass value="0.1300765489676125"/>
+    <inertia ixx="3.4e-05" iyy="4.7e-05" izz="3.4e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.6 -0.425 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/motor_holder2_v3[1]_v1_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.6 -0.425 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/motor_holder2_v3[1]_v1_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_initial_v1[1]_v2_2">
+  <inertial>
+    <origin xyz="2.965594796955351e-07 -0.04361304476122853 1.282546155112474e-07" rpy="0 0 0"/>
+    <mass value="3.397639562370722"/>
+    <inertia ixx="0.013323" iyy="0.025608" izz="0.013323" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.3 0.05 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/wheel_initial_v1[1]_v2_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.3 0.05 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/wheel_initial_v1[1]_v2_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_initial_v1[1]_v2_3">
+  <inertial>
+    <origin xyz="-2.965594790094173e-07 0.04361304476122885 1.2825461553900297e-07" rpy="0 0 0"/>
+    <mass value="3.397639562370722"/>
+    <inertia ixx="0.013323" iyy="0.025608" izz="0.013323" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.554 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/wheel_initial_v1[1]_v2_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.554 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/wheel_initial_v1[1]_v2_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_initial_v1[1]_v2_4">
+  <inertial>
+    <origin xyz="-2.9655947836326746e-07 0.04361304476123595 1.2825461553900297e-07" rpy="0 0 0"/>
+    <mass value="3.397639562370722"/>
+    <inertia ixx="0.013323" iyy="0.025608" izz="0.013323" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.3 -0.554 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/wheel_initial_v1[1]_v2_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.3 -0.554 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/wheel_initial_v1[1]_v2_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_initial_v1[1]_v2_5">
+  <inertial>
+    <origin xyz="2.9655947997309084e-07 -0.043613044761225926 1.2825461542798067e-07" rpy="0 0 0"/>
+    <mass value="3.397639562370722"/>
+    <inertia ixx="0.013323" iyy="0.025608" izz="0.013323" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.6 -0.046 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/wheel_initial_v1[1]_v2_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.6 -0.046 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/wheel_initial_v1[1]_v2_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_initial_v1[1]_v2_6">
+  <inertial>
+    <origin xyz="-2.9655947564322105e-07 0.043613044761229236 1.282546155112474e-07" rpy="0 0 0"/>
+    <mass value="3.397639562370722"/>
+    <inertia ixx="0.013323" iyy="0.025608" izz="0.013323" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.6 -0.454 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/wheel_initial_v1[1]_v2_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.6 -0.454 -0.129939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rockerbogie-2_description/meshes/wheel_initial_v1[1]_v2_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="-0.3 0.15 0.372839" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component3_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 2" type="continuous">
+  <origin xyz="-0.3 0.35 0.372839" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component5_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 3" type="continuous">
+  <origin xyz="0.15 -0.08975 -0.0929" rpy="0 0 0"/>
+  <parent link="Component3_1"/>
+  <child link="Component2_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 4" type="continuous">
+  <origin xyz="0.15 0.08975 -0.0929" rpy="0 0 0"/>
+  <parent link="Component5_1"/>
+  <child link="Component4_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 5" type="continuous">
+  <origin xyz="0.0 -0.029 0.0" rpy="0 0 0"/>
+  <parent link="motor_holder2_v3[1]_v1_1"/>
+  <child link="wheel_initial_v1[1]_v2_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="Rigid 6" type="fixed">
+  <origin xyz="0.15 -0.08525 -0.15" rpy="0 0 0"/>
+  <parent link="Component2_1"/>
+  <child link="motor_holder2_v3[1]_v1_1"/>
+</joint>
+
+<joint name="Rigid 7" type="fixed">
+  <origin xyz="-0.15 -0.08525 -0.15" rpy="0 0 0"/>
+  <parent link="Component2_1"/>
+  <child link="motor_holder2_v3[1]_v1_3"/>
+</joint>
+
+<joint name="Rigid 8" type="fixed">
+  <origin xyz="0.15 0.08525 -0.15" rpy="0 0 0"/>
+  <parent link="Component4_1"/>
+  <child link="motor_holder2_v3[1]_v1_4"/>
+</joint>
+
+<joint name="Rigid 9" type="fixed">
+  <origin xyz="-0.15 0.08525 -0.15" rpy="0 0 0"/>
+  <parent link="Component4_1"/>
+  <child link="motor_holder2_v3[1]_v1_5"/>
+</joint>
+
+<joint name="Rigid 10" type="fixed">
+  <origin xyz="-0.3 -0.075 -0.2429" rpy="0 0 0"/>
+  <parent link="Component3_1"/>
+  <child link="motor_holder2_v3[1]_v1_6"/>
+</joint>
+
+<joint name="Rigid 11" type="fixed">
+  <origin xyz="-0.3 0.075 -0.2429" rpy="0 0 0"/>
+  <parent link="Component5_1"/>
+  <child link="motor_holder2_v3[1]_v1_8"/>
+</joint>
+
+<joint name="Revolute 12" type="continuous">
+  <origin xyz="-0.15 -0.11025 -0.15" rpy="0 0 0"/>
+  <parent link="Component2_1"/>
+  <child link="wheel_initial_v1[1]_v2_2"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 13" type="continuous">
+  <origin xyz="0.0 0.029 0.0" rpy="0 0 0"/>
+  <parent link="motor_holder2_v3[1]_v1_4"/>
+  <child link="wheel_initial_v1[1]_v2_3"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 14" type="continuous">
+  <origin xyz="0.0 0.029 0.0" rpy="0 0 0"/>
+  <parent link="motor_holder2_v3[1]_v1_5"/>
+  <child link="wheel_initial_v1[1]_v2_4"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 15" type="continuous">
+  <origin xyz="0.0 -0.029 0.0" rpy="0 0 0"/>
+  <parent link="motor_holder2_v3[1]_v1_6"/>
+  <child link="wheel_initial_v1[1]_v2_5"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 16" type="continuous">
+  <origin xyz="0.0 0.029 0.0" rpy="0 0 0"/>
+  <parent link="motor_holder2_v3[1]_v1_8"/>
+  <child link="wheel_initial_v1[1]_v2_6"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+</robot>
